@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../img/favicon/favicon.ico" type="image/x-icon">
+    <meta name="author" content="Felipe Agudelo">
+    <meta name="copyright" content="Felipe Agudelo">
+    <title>Tecnologías JavaScript y AJAX</title>
+    <link rel="stylesheet" href="../../css/Jsc$Ajx/styles_Jsc$Ajx.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="body">
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="textos_header">
+            <h1 class="tituloHeader">Tecnologías JavaScript y AJAX</h1>
+        </div>
+
+        <!-- MENU LATERAL -->
+        <section class="contMenuLat">
+            <nav class="menuLat" id="menuLat">
+                <a href="../../index.html">MENU PRINCIPAL</a>
+                <a href="../blog/blog.html">LABORATORIO UNO</a>
+            </nav>
+        </section>
+
+        <!-- MENU PLEGABLE -->
+        <div class="bars__menu" id="bars__menu">
+            <span class="line1__bars-menu" id="line1__bars-menu"></span>
+            <span class="line2__bars-menu" id="line2__bars-menu"></span>
+            <span class="line3__bars-menu" id="line3__bars-menu"></span>
+        </div>
+
+        <div class="contImgMenu" id="menuImagen">
+            <span class="imagenMenu"></span>
+        </div>
+
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <section class="contenedor">
+
+            <form class="contenedores" id="formulario">
+                <h2 class="tituloForm">Formulario Tecnologías JavaScript y AJAX</h2>
+
+
+                <!--PALINDROMO-->
+                <section class="contsForm">
+                    <div class="contIpts">
+                        <div class="textos">
+                            <h3 class="subtitulos">Palíndromo</h3>
+                            <p class="parrafos">Ingrese una palabra o frase para que el programa pueda determinar si se
+                                trata de un palíndromo.</p>
+                        </div>
+                        <div class="contSecund">
+                            <div class="cont_ipt_lbl">
+                                <label for="secPal" class="lblForm">Escriba una palabra o una frase</label>
+                                <div>
+                                    <input type="text" class="iptTxt" id="secPal">
+                                    <span class="barra"></span>
+                                </div>
+                            </div>
+                            <div class="contRespuestas">
+                                <div class="contRptRtd" id="contRptRtdPal">
+                                    <p class="respuesta" id="respuestaPal"></p>
+                                    <p class="resultado" id="resultadoPal"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contBtn">
+                            <input type="button" value="Validar" class="btnForm" id="btnValPal">
+                        </div>
+                    </div>
+                </section>
+
+                <!--NÚMERO MAYOR-->
+                <section class="contsForm">
+                    <div class="contIpts">
+                        <div class="textos">
+                            <h3 class="subtitulos">Número mayor</h3>
+                            <p class="parrafos">Ingrese los dos números solicitados a continuación, y el programa le
+                                indicara cual es el mayor.</p>
+                        </div>
+                        <div class="contSecund contSecundNum">
+                            <div class="contIptNum">
+                                <label for="secNum1" class="lblForm">Ingrese el primer número</label>
+                                <div>
+                                    <input type="number" class="iptNum" id="secNum1">
+                                    <span class="barra barraNum"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="secNum2" class="lblForm">Ingrese el segundo número</label>
+                                <div>
+                                    <input type="number" id="secNum2" class="iptNum">
+                                    <span class="barra barraNum"></span>
+                                </div>
+                            </div>
+                            <div class="contRespuestas">
+                                <div class="contRptRtd" id="contRptRtdNums">
+                                    <p class="respuesta" id="respuestaNums"></p>
+                                    <p class="resultado" id="resultadoNums"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contBtn">
+                            <input type="button" value="Validar" class="btnForm" id="btnValNums">
+                        </div>
+                    </div>
+                </section>
+
+                <!--VOCALES-->
+                <section class="contsForm">
+                    <div class="contIpts">
+                        <div class="textos">
+                            <h3 class="subtitulos">Vocales</h3>
+                            <p class="parrafos">Ingrese una palabra o frase para que el programa determine las vocales
+                                con las que esta cuneta.</p>
+                        </div>
+                        <div class="contSecund">
+                            <div class="cont_ipt_lbl">
+                                <label for="secVoc" class="lblForm">Ingrese una palabra o una frase</label>
+                                <div>
+                                    <input type="text" class="iptTxt" id="secVoc">
+                                    <span class="barra"></span>
+                                </div>
+                            </div>
+                            <div class="contRespuestas">
+                                <div class="contRptRtd" id="contRptRtdVoc">
+                                    <p class="respuesta" id="respuestaVoc"></p>
+                                    <p class="resultado" id="resultadoVoc"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contBtn">
+                            <input type="button" value="Validar" class="btnForm" id="btnValVoc">
+                        </div>
+                    </div>
+                </section>
+
+                <!--NÚMERO DE VOCALES-->
+                <section class="contsForm">
+                    <div class="contIpts">
+                        <div class="textos">
+                            <h3 class="subtitulos">Número de vocales</h3>
+                            <p class="parrafos">Ingrese una palabra o frase para que el programa determine el número
+                                total de cada vocal con las que esta cuenta.</p>
+                        </div>
+                        <div class="contSecund">
+                            <div class="cont_ipt_lbl">
+                                <label for="secNumVoc" class="lblForm">Escriba una palabra o una frase</label>
+                                <div>
+                                    <input type="text" class="iptTxt" id="secNumVoc">
+                                    <span class="barra"></span>
+                                </div>
+                            </div>
+                            <div class="contRespuestas">
+                                <div class="contRptRtd" id="contRptRtdNumVoc">
+                                    <p class="respuesta respuestaVocal" id="respuestaNumVoc"></p>
+                                    <p class="resultado" id="resultadoNumVoc"></p>
+                                    <p class="resultado" id="resultadoVocA"></p>
+                                    <p class="resultado" id="resultadoVocE"></p>
+                                    <p class="resultado" id="resultadoVocI"></p>
+                                    <p class="resultado" id="resultadoVocO"></p>
+                                    <p class="resultado" id="resultadoVocU"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contBtn">
+                            <input type="button" value="Validar" class="btnForm" id="btnValNumVoc">
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- AJAX -->
+                <section class="contsForm">
+                    <div class="contIpts">
+                        <div class="textos">
+                            <h3 class="subtitulos">AJAX</h3>
+                            <p class="parrafos">Ingrese la URL de la base de datos a realizar la petición.</p>
+                        </div>
+                        <div class="contSecund">
+                            <div class="cont_ipt_lbl">
+                                <label for="secAjax" class="lblForm">Ingrese una URL</label>
+                                <div>
+                                    <input type="text" class="iptTxt iptAjax" id="secAjax">
+                                    <span class="barra barrAjax"></span>
+                                </div>
+                            </div>
+                            <div id="contPeticion" class="contPeticion">
+                                <label class="lblPeticion">Estado petición</label>
+                                <span class="spanPeticion" id="spanPeticion">No iniciada</span>
+                            </div>
+                            <div class="contRespuestas">
+                                <div class="contRptRtd" id="contRptRtdAjax">
+                                    <p class="parrafoAjax" id="parrafoAjax"></p>
+                                    <p id="bandera"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contRespuestas contRespuestasAjax">
+                            <div class="contRptRtd" id="contLista">
+                                <ol class="lista" id="xhr">
+
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="contBtn">
+                            <input type="button" value="Mostrar contenido" class="btnForm" id="btnMostrar">
+                        </div>
+                        <div class="contbtnBorr" id="contbtnBorrar">
+                            <input type="button" value="Borrar contenido" class="btnForm" id="btnBorrar">
+                        </div>
+                    </div>
+                </section>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="cont_footer">
+            <div class="redes_sociales">
+                <a href="mailto:felipeagudeloolaya@gmail.com" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <p>felipeagudeloolaya@gmail.com</p>
+            </div>
+            <div class="redes_sociales">
+                <a href="https://github.com/FelipeAgudelo76?tab=repositories" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <p>@FelipeAgudelo76</p>
+            </div>
+        </div>
+        <h2 class="titulo_final">&copy; Dresk | Felipe Agudelo</h2>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/f64b62abdb.js" crossorigin="anonymous"></script>
+    <script src="../../scripts/scripts.js"></script>
+    <script src="../../scripts/ajax.js"></script>
+    <script src="../../scripts/menuPle.js"></script>
+</body>
+
+</html>
